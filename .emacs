@@ -1,11 +1,20 @@
 ;; Emacs customizations.
 
+;; My favorite theme.
 (load-theme 'tango-dark t)
 
 (add-to-list 'load-path "~/.emacs.d/")
 
+;; Sassy CSS mode.
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+;; Markdown mode.
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (setq tab-width 4)
 ;;(require 'php-mode)
@@ -75,7 +84,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(inhibit-startup-screen t))
+ '(inhibit-startup-screen t)
+ '(vc-follow-symlinks t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
