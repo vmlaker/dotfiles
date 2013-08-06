@@ -1,0 +1,7 @@
+[user]
+	name = vmlaker
+	email = velimir.mlaker@gmail.com
+[core]
+	editor = emacs
+[merge]
+	tool = tkdiff

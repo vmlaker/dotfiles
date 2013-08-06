@@ -1,0 +1,19 @@
+unalias ls
+
+alias ll 'ls -l'
+alias lt 'ls -lt'
+alias llh 'ls -l | head'
+alias lsd 'ls -la'
+alias lst 'ls -lat'
+alias duh 'du --max-depth=1'
+set prompt = '%U%m%u:%B%~%b> '
+set history = 1000
+
+setenv LD_LIBRARY_PATH
+setenv PYTHONPATH
+
+set path =( $HOME/bin \
+            $HOME/.local/bin \
+            $path )
+
+setenv EDITOR emacs
