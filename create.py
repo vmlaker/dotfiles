@@ -11,8 +11,8 @@ DEST = os.path.expanduser('~') if len(sys.argv) <= 1 else sys.argv[1]
 # to all the .* entries here.
 for fname in glob.glob('.*'):
     
-    # Skip .git.
-    if fname in ('.git'):
+    # Skip some files.
+    if fname in ('.git', '.gitmodules'):
         continue
 
     link = os.path.join(DEST, fname)

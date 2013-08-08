@@ -19,12 +19,15 @@
 (setq tab-width 4)
 ;;(require 'php-mode)
 
+;; CoffeeScript mode.
+(add-to-list 'load-path "~/.emacs.d/coffee-mode")
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (require 'coffee-mode)
 
-(setq coffee-mode-hook
-      (function (lambda ()
-                  (setq indent-tabs-mode nil)
-                  (setq c-indent-level 4))))
+;; Jade mode.
+(add-to-list 'load-path "~/.emacs.d/jade-mode")
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 (setq scss-mode-hook
       (function (lambda ()

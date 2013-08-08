@@ -1,0 +1,6 @@
+[submodule ".emacs.d/jade-mode"]
+	path = .emacs.d/jade-mode
+	url = http://github.com/brianc/jade-mode
+[submodule ".emacs.d/coffee-mode"]
+	path = .emacs.d/coffee-mode
+	url = http://github.com/defunkt/coffee-mode
