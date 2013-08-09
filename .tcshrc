@@ -6,7 +6,15 @@ alias llh 'ls -l | head'
 alias lsd 'ls -la'
 alias lst 'ls -lat'
 alias duh 'du --max-depth=1'
-set prompt = '%U%m%u:%B%~%b> '
+
+# Customize the prompt.
+# (Nice examples at http://www.tcsh.org/PromptExamples)
+if ($USER == 'root') then
+    set prompt = '%U%n@%m%u:%B%~%b # '
+else
+    set prompt = '%U%n@%m%u:%B%~%b> '
+endif
+
 set history = 1000
 
 setenv LD_LIBRARY_PATH
