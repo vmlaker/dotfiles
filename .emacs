@@ -1,9 +1,9 @@
 ;; Emacs customizations.
 
-;; My favorite theme.
-(load-theme 'tango-dark t)
-
 (add-to-list 'load-path "~/.emacs.d/")
+
+;; My favorite theme.
+(load-file "~/.emacs.d/vmlaker-theme.el")
 
 ;; Sassy CSS mode.
 (autoload 'scss-mode "scss-mode")
@@ -81,6 +81,9 @@
       (concat user-temporary-file-directory ".auto-saves-"))
 (setq auto-save-file-name-transforms
       `((".*" ,user-temporary-file-directory t)))
+
+;; A little bit larger font looks nicer.
+(set-face-attribute 'default nil :height 110)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
