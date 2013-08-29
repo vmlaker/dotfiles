@@ -1,10 +1,14 @@
-unalias ls
+# tcsh resource file.
 
+# Listing related stuff.
+unalias ls
 alias ll 'ls -l'
 alias lt 'ls -lt'
-alias llh 'ls -l | head'
 alias lsd 'ls -la'
 alias lst 'ls -lat'
+alias lth 'ls -lt | head'
+
+# Shallow disk usage.
 alias duh 'du --max-depth=1'
 
 # Customize the prompt.
