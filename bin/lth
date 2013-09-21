@@ -1,0 +1,2 @@
+#!/usr/bin/env tcsh
+ls -lt $1 | head

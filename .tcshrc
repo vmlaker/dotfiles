@@ -6,7 +6,6 @@ alias ll 'ls -l'
 alias lt 'ls -lt'
 alias lsd 'ls -la'
 alias lst 'ls -lat'
-alias lth 'ls -lt | head'
 
 # Shallow disk usage.
 alias duh 'du --max-depth=1'
@@ -24,8 +23,10 @@ set history = 1000
 setenv LD_LIBRARY_PATH
 setenv PYTHONPATH
 
-set path =( $HOME/bin \
-            $HOME/.local/bin \
-            $path )
+set path =(\
+    $HOME/.local/bin \
+    $HOME/.dotfiles/bin \
+    $path \
+)
 
 setenv EDITOR emacs
