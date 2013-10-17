@@ -5,6 +5,14 @@
 ;; My favorite theme.
 (load-file "~/.emacs.d/vmlaker-theme.el")
 
+;; CMake mode.
+(setq load-path (cons (expand-file-name "~/.emacs.d/cmake-mode") load-path))
+(require 'cmake-mode)
+(setq auto-mode-alist
+      (append '(("CMakeLists\\.txt\\'" . cmake-mode)
+                ("\\.cmake\\'" . cmake-mode))
+              auto-mode-alist))
+
 ;; Sassy CSS mode.
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
