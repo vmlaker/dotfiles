@@ -60,6 +60,10 @@
                   (setq indent-tabs-mode nil)
                   (setq c-indent-level 4))))
 
+;; Using this style mainly for indentation.
+(setq c-default-style "linux")
+
+
 (setq c-basic-offset 4)
 (setq tab-width 4)
 (setq indent-tabs-mode nil)
