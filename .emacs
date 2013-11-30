@@ -24,6 +24,12 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; Enable SCons to use Python mode.
+(setq auto-mode-alist
+      (cons '("SConstruct" . python-mode) auto-mode-alist))
+ (setq auto-mode-alist
+      (cons '("SConscript" . python-mode) auto-mode-alist))
+
 (setq tab-width 4)
 ;;(require 'php-mode)
 
@@ -61,8 +67,8 @@
                   (setq c-indent-level 4))))
 
 ;; Using this style mainly for indentation.
-(setq c-default-style "linux")
-
+(setq c-default-style "linux"
+      c-basic-offset 4)
 
 (setq c-basic-offset 4)
 (setq tab-width 4)
