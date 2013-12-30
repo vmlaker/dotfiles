@@ -80,6 +80,6 @@
  '(semantic-decoration-on-unparsed-includes ((((class color) (min-colors 89)) (:background "#41423f"))))
  '(semantic-tag-boundary-face ((((class color) (min-colors 89)) (:overline "#729fcf"))))
  '(semantic-unmatched-syntax-face ((((class color) (min-colors 89)) (:underline "#ef2929"))))
- '(default ((((class color) (min-colors 4096)) (:foreground "#eeeeec" :background "#2e3436")) (((class color) (min-colors 256)) (:foreground "#eeeeec" :background "#222")) (((class color) (min-colors 89)) (:foreground "#eeeeec" :background "black")))))
+ '(default ((((class color) (min-colors 4096)) (:foreground "#eeeeec" :background "#1B1B1B")) (((class color) (min-colors 256)) (:foreground "#eeeeec" :background "#222")) (((class color) (min-colors 89)) (:foreground "#eeeeec" :background "black")))))
 
 (provide-theme 'vmlaker)
