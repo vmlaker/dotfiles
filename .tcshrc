@@ -25,6 +25,8 @@ setenv PYTHONPATH
 
 set path =(\
 \
+    /usr/local/bin \
+\
 \   # MPICH.\
     /usr/lib64/mpich/bin \
 \
