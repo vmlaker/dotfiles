@@ -20,11 +20,11 @@ for fname in glob.glob('.*'):
     source = os.path.relpath(fname, DEST)
 
     if os.path.lexists(link):
-        print('{} exists, skipping.'.format(link))
+        print('{0} exists, skipping.'.format(link))
         existing.append(link)
         continue
 
-    print('Linking {} --> {}'.format(link, source))
+    print('Linking {0} --> {1}'.format(link, source))
     os.symlink(source, link)
 
 # Print a cleanup command so user can remove existing links.
@@ -32,6 +32,6 @@ command = ''
 if existing:
     command += 'rm -rf '
     for link in existing:
-        command += '{} '.format(link)
+        command += '{0} '.format(link)
 if command: 
     print(command)
