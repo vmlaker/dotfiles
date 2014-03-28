@@ -35,4 +35,13 @@ set path =(\
     $path \
 )
 
+switch ($OSTYPE)
+case "darwin":
+    set path =(\
+        $HOME/Library/Python/2.7/bin \
+\
+)
+    breaksw
+endsw
+
 setenv EDITOR emacs
