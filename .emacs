@@ -84,7 +84,8 @@
 (modify-frame-parameters nil '((wait-for-wm . nil)))
 
 ;; Remove toolbar.
-(tool-bar-mode -1)
+(if window-system
+    (tool-bar-mode 0))
 
 ;; Show line numbers.
 (setq line-number-mode t)
