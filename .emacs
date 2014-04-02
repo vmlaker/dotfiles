@@ -66,6 +66,12 @@
                   (setq indent-tabs-mode nil)
                   (setq c-indent-level 4))))
 
+(add-hook 'python-mode-hook
+      (lambda ()
+        (setq indent-tabs-mode t)
+        (setq tab-width 4)
+        (setq python-indent 4)))
+
 ;; Using this style mainly for indentation.
 (setq c-default-style "linux"
       c-basic-offset 4)
