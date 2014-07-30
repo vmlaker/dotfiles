@@ -52,7 +52,6 @@
       (function (lambda ()
                   (setq indent-tabs-mode nil)
                   (setq c-indent-level 4))))
-
 (setq c-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)
@@ -65,6 +64,11 @@
       (function (lambda ()
                   (setq indent-tabs-mode nil)
                   (setq c-indent-level 4))))
+
+(add-hook 'html-mode-hook
+        (lambda ()
+          ;; Default indentation is usually 2 spaces, changing to 4.
+          (set (make-local-variable 'sgml-basic-offset) 4)))
 
 (add-hook 'python-mode-hook
       (lambda ()
