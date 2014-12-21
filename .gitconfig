@@ -5,3 +5,5 @@
 	editor = emacs
 [merge]
 	tool = tkdiff
+[difftool]
+        prompt = false
