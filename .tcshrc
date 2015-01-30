@@ -33,6 +33,7 @@ set path =(\
     $HOME/.gem/ruby/1.9.1/bin \
     $HOME/.dotfiles/bin \
     $HOME/.local/bin \
+    $HOME/.venv/bin \
     $path \
 )
 
