@@ -7,3 +7,10 @@
 	tool = tkdiff
 [difftool]
         prompt = false
+[push]
+	default = simple
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+        dt = difftool
