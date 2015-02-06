@@ -1,9 +1,9 @@
 [submodule ".emacs.d/jade-mode"]
-	path = .emacs.d/jade-mode
+	path = .emacs.d/lisp/jade-mode
 	url = https://github.com/brianc/jade-mode
 [submodule ".emacs.d/coffee-mode"]
-	path = .emacs.d/coffee-mode
+	path = .emacs.d/lisp/coffee-mode
 	url = https://github.com/defunkt/coffee-mode
 [submodule ".emacs.d/yaml-mode"]
-	path = .emacs.d/yaml-mode
+	path = .emacs.d/lisp/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode

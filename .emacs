@@ -1,12 +1,12 @@
 ;; Emacs customizations.
 
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
 ;; My favorite theme.
-(load-file "~/.emacs.d/vmlaker-theme.el")
+(load-file "~/.emacs.d/lisp/vmlaker-theme.el")
 
 ;; CMake mode.
-(setq load-path (cons (expand-file-name "~/.emacs.d/cmake-mode") load-path))
+(setq load-path (cons (expand-file-name "~/.emacs.d/lisp/cmake-mode") load-path))
 (require 'cmake-mode)
 (setq auto-mode-alist
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
@@ -34,17 +34,17 @@
 ;;(require 'php-mode)
 
 ;; CoffeeScript mode.
-(add-to-list 'load-path "~/.emacs.d/coffee-mode")
+(add-to-list 'load-path "~/.emacs.d/lisp/coffee-mode")
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (require 'coffee-mode)
 
 ;; Jade mode.
-(add-to-list 'load-path "~/.emacs.d/jade-mode")
+(add-to-list 'load-path "~/.emacs.d/lisp/jade-mode")
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 ;; YAML mode.
-(add-to-list 'load-path "~/.emacs.d/yaml-mode")
+(add-to-list 'load-path "~/.emacs.d/lisp/yaml-mode")
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
