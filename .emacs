@@ -48,6 +48,10 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; ESS.
+(add-to-list 'load-path "~/.emacs.d/lisp/ESS/lisp")
+(load "ess-site")
+
 (setq scss-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)

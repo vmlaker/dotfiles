@@ -7,3 +7,6 @@
 [submodule ".emacs.d/yaml-mode"]
 	path = .emacs.d/lisp/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode
+[submodule ".emacs.d/lisp/ESS"]
+	path = .emacs.d/lisp/ESS
+	url = https://github.com/emacs-ess/ESS
