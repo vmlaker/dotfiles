@@ -71,8 +71,8 @@
 
 (add-hook 'html-mode-hook
         (lambda ()
-          ;; Default indentation is usually 2 spaces, changing to 4.
-          (set (make-local-variable 'sgml-basic-offset) 4)))
+          ;; Default indentation is usually 2 spaces, explicitly setting to 2.
+          (set (make-local-variable 'sgml-basic-offset) 2)))
 
 (add-hook 'python-mode-hook
       (lambda ()
