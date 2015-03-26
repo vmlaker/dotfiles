@@ -13,7 +13,7 @@ existing = list()  # Collect links that already exist.
 for fname in glob.glob('.*'):
     
     # Skip some files.
-    if fname in ('.git', '.gitmodules'):
+    if fname in ('.git', '.gitmodules', '.gitignore',):
         continue
 
     link = os.path.join(DEST, fname)
