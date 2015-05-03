@@ -1,0 +1,2 @@
+#!/usr/bin/env tcsh
+ps awxu | grep $1
