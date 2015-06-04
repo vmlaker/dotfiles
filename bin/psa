@@ -1,2 +1,3 @@
 #!/usr/bin/env tcsh
-ps awxu | grep $1
+ps awxu | head -1
+ps awxu | grep $1 | grep -v 'psa '$1 | grep -v 'grep '$1
