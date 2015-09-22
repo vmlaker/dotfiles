@@ -59,7 +59,7 @@
 (setq c-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)
-                  (setq c-indent-level 4))))
+                  (setq c-indent-level 2))))
 (setq objc-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)
@@ -67,7 +67,7 @@
 (setq c++-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)
-                  (setq c-indent-level 4))))
+                  (setq c-indent-level 2))))
 
 (add-hook 'html-mode-hook
         (lambda ()
@@ -139,7 +139,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
- '(vc-follow-symlinks t))
+ '(vc-follow-symlinks t)
+ '(c-basic-offset 2))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
