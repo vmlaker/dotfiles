@@ -10,6 +10,9 @@ alias lst 'ls -lat'
 # Shallow disk usage.
 alias duh 'du --max-depth=1'
 
+# JSON prettyfier.
+alias prettyjson 'python -m json.tool'
+
 # Customize the prompt.
 # (Nice examples at http://www.tcsh.org/PromptExamples)
 if ($USER == 'root') then
