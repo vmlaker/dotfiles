@@ -2,6 +2,12 @@
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
+;; Guess style (from https://github.com/nschum/guess-style).
+(add-to-list 'load-path "~/.emacs.d/lisp/guess-style")
+(autoload 'guess-style-set-variable "guess-style" nil t)
+(autoload 'guess-style-guess-variable "guess-style")
+(autoload 'guess-style-guess-all "guess-style" nil t)
+
 ;; My favorite theme.
 (load-file "~/.emacs.d/lisp/vmlaker-theme.el")
 
@@ -74,11 +80,12 @@
           ;; Default indentation is usually 2 spaces, explicitly setting to 2.
           (set (make-local-variable 'sgml-basic-offset) 2)))
 
+;;(add-hook 'python-mode-hook 'guess-style-guess-tabs-mode)
 (add-hook 'python-mode-hook
-      (lambda ()
-        (setq indent-tabs-mode nil)
-        (setq tab-width 4)
-        (setq python-indent 4)))
+          (lambda ()
+            (guess-style-guess-all)
+            (setq tab-width 4)
+            (setq python-indent 4)))
 
 ;; Using this style mainly for indentation.
 (setq c-default-style "linux"
@@ -86,8 +93,6 @@
 
 (setq c-basic-offset 4)
 (setq tab-width 4)
-(setq indent-tabs-mode nil)
-(setq-default indent-tabs-mode nil)
 
 (setq cssm-mode-hook
       (function (lambda ()

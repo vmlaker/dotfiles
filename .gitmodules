@@ -10,3 +10,6 @@
 [submodule ".emacs.d/lisp/ESS"]
 	path = .emacs.d/lisp/ESS
 	url = https://github.com/emacs-ess/ESS
+[submodule ".emacs.d/lisp/guess-style"]
+	path = .emacs.d/lisp/guess-style
+	url = https://github.com/vmlaker/guess-style
