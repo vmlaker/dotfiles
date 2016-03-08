@@ -1,2 +1,2 @@
-#!/usr/bin/env tcsh
+#!/usr/bin/env bash
 ls -lt $1 | head
