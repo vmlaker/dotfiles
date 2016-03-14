@@ -10,8 +10,9 @@
 [push]
 	default = simple
 [alias]
+        br = branch
+        dt = difftool
+	ci = commit
 	co = checkout
 	st = status
-	ci = commit
-        dt = difftool
         uc = reset --soft HEAD^
