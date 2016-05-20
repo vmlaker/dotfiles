@@ -54,9 +54,11 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; Stop using ESS because Emacs hangs on "enabling speedbar support"
+;; for too long when starting up remotely with -nw arguments.
 ;; ESS.
-(add-to-list 'load-path "~/.emacs.d/lisp/ESS/lisp")
-(load "ess-site")
+;;(add-to-list 'load-path "~/.emacs.d/lisp/ESS/lisp")
+;;(load "ess-site")
 
 (setq scss-mode-hook
       (function (lambda ()
