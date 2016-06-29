@@ -80,6 +80,7 @@
 (add-hook 'html-mode-hook
         (lambda ()
           ;; Default indentation is usually 2 spaces, explicitly setting to 2.
+	  (setq indent-tabs-mode nil)
           (set (make-local-variable 'sgml-basic-offset) 2)))
 
 ;;(add-hook 'python-mode-hook 'guess-style-guess-tabs-mode)
