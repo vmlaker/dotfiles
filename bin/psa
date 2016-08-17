@@ -1,3 +1,3 @@
 #!/usr/bin/env tcsh
-ps -eo pid,user,lstart,etime,time,rsz,vsz,args | head -1
-ps -eo pid,user,lstart,etime,time,rsz,vsz,args | grep $1 | grep -v 'psa '$1 | grep -v 'grep '$1
+ps -eo pid,user,lstart,etime,time,pcpu,rsz,vsz,args | head -1
+ps -eo pid,user,lstart,etime,time,pcpu,rsz,vsz,args | grep $1 | grep -v 'psa '$1 | grep -v 'grep '$1
