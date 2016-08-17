@@ -49,6 +49,11 @@
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
+;; Typescript mode.
+(add-to-list 'load-path "~/.emacs.d/lisp/typescript-mode")
+(require 'typescript)
+(add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
+
 ;; YAML mode.
 (add-to-list 'load-path "~/.emacs.d/lisp/yaml-mode")
 (require 'yaml-mode)
