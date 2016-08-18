@@ -65,6 +65,10 @@
 ;;(add-to-list 'load-path "~/.emacs.d/lisp/ESS/lisp")
 ;;(load "ess-site")
 
+(setq typescript-mode-hook
+      (function (lambda ()
+                  (setq indent-tabs-mode nil)
+                  (setq c-indent-level 4))))
 (setq scss-mode-hook
       (function (lambda ()
                   (setq indent-tabs-mode nil)
