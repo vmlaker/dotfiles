@@ -86,6 +86,8 @@
                   (setq indent-tabs-mode nil)
                   (setq c-indent-level 2))))
 
+(setq js-indent-level 2)
+
 (add-hook 'html-mode-hook
         (lambda ()
           ;; Default indentation is usually 2 spaces, explicitly setting to 2.
