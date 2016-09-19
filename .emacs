@@ -95,6 +95,7 @@
                   (setq c-indent-level 2))))
 
 (setq js-indent-level 2)
+(setq jsx-indent-level 2)
 
 (add-hook 'html-mode-hook
         (lambda ()
