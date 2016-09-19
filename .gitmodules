@@ -16,3 +16,6 @@
 [submodule ".emacs.d/lisp/typescript-mode"]
 	path = .emacs.d/lisp/typescript-mode
 	url = https://github.com/aki2o/emacs-tss
+[submodule ".emacs.d/lisp/jsx-mode.el"]
+	path = .emacs.d/lisp/jsx-mode.el
+	url = git@github.com:/vmlaker/jsx-mode.el.git

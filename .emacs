@@ -54,6 +54,14 @@
 (require 'typescript)
 (add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
 
+;; JSX mode.
+(add-to-list 'load-path "~/.emacs.d/lisp/jsx-mode.el/src")
+(require 'jsx-mode)
+(add-to-list 'auto-mode-alist '("\\.jsx$" . jsx-mode))
+;; This was from JSX mode page, but no worky:
+;;(add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
+;;(autoload 'jsx-mode "jsx-mode" "JSX mode" t)
+
 ;; YAML mode.
 (add-to-list 'load-path "~/.emacs.d/lisp/yaml-mode")
 (require 'yaml-mode)
