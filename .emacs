@@ -1,5 +1,9 @@
 ;; Emacs customizations.
 
+;; disable auto-save and auto-backup
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
 ;; Guess style (from https://github.com/nschum/guess-style).
@@ -144,19 +148,6 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
     
 (setq scroll-step 1) ;; keyboard scroll one line at a time
-
-;; Use temporary files directory.
-(defvar user-temporary-file-directory
-  "~/.emacs-autosaves/")
-(make-directory user-temporary-file-directory t)
-(setq backup-by-copying t)
-(setq backup-directory-alist
-      `(("." . ,user-temporary-file-directory)
-        (tramp-file-name-regexp nil)))
-(setq auto-save-list-file-prefix
-      (concat user-temporary-file-directory ".auto-saves-"))
-(setq auto-save-file-name-transforms
-      `((".*" ,user-temporary-file-directory t)))
 
 ;; A little bit larger font looks nicer.
 (set-face-attribute 'default nil :height 110)
