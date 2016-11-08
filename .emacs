@@ -4,6 +4,8 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
+(setq-default indent-tabs-mode nil)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
 ;; Guess style (from https://github.com/nschum/guess-style).
