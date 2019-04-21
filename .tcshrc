@@ -2,10 +2,13 @@
 
 # Listing related stuff.
 unalias ls
+alias l 'ls'
 alias ll 'ls -l'
 alias lt 'ls -lt'
 alias lsd 'ls -la'
 alias lst 'ls -lat'
+alias pythongb '~/work/git/GBmapper/deploy/python'
+alias pipgb '~/work/git/GBmapper/deploy/pip'
 
 # Shallow disk usage.
 alias duh 'du --max-depth=1'
@@ -26,6 +29,8 @@ set history = 1000
 setenv LD_LIBRARY_PATH
 setenv PYTHONPATH
 
+setenv GEM_HOME $HOME/.gem
+
 set path =(\
 \
     /usr/local/bin \
@@ -33,9 +38,10 @@ set path =(\
 \   # MPICH.\
     /usr/lib64/mpich/bin \
 \
-    $HOME/.gem/ruby/1.9.1/bin \
+    $HOME/.gem/ruby/2.3.0/bin \
     $HOME/.dotfiles/bin \
     $HOME/.local/bin \
+    $HOME/work/install_visit/visit2_10_0.linux-x86_64/bin \
     # $HOME/.venv/bin \
     $path \
 )
@@ -57,3 +63,10 @@ setenv EDITOR emacs
 # g       google.com
 # router  192.168.1.1
 setenv HOSTALIASES ~/.hosts
+
+setenv VAULT_ADDR http://ec2-54-67-66-51.us-west-1.compute.amazonaws.com
+setenv VAULT_TOKEN bc74fd87-e55a-7ac9-51d2-0b05d3923f6a
+
+setenv WORKON_HOME $HOME/.virtualenvs
+
+setenv NCARG_ROOT /usr
