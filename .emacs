@@ -151,8 +151,16 @@
     
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
+;; Set scroll bar on the left, for Emacs:
+(set-scroll-bar-mode 'left)
+
+;; Set scroll bar on the left, for XEmacs:
+;; (replace nil with t to place it to the left)
+;(set-specifier scrollbar-on-left-p t)
+;(set-specifier scrollbar-on-left-p nil)
+
 ;; A little bit larger font looks nicer.
-(set-face-attribute 'default nil :height 110)
+(set-face-attribute 'default nil :height 105)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
