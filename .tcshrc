@@ -31,7 +31,13 @@ setenv PYTHONPATH
 
 setenv GEM_HOME $HOME/.gem
 
+#set path =(\
+#    $HOME/.pyenv/bin \
+#    $path \
+#)
+
 set path =(\
+    $HOME/.local/bin \
 \
     /usr/local/bin \
 \
@@ -70,3 +76,9 @@ setenv VAULT_TOKEN bc74fd87-e55a-7ac9-51d2-0b05d3923f6a
 setenv WORKON_HOME $HOME/.virtualenvs
 
 setenv NCARG_ROOT /usr
+
+#pyenv init -
+#pyenv virtualenv-init -
+
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
