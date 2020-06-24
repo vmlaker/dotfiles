@@ -137,7 +137,7 @@
 
 ;; Show line numbers.
 (setq line-number-mode t)
-(setq line-number-display-limit nil)
+(setq line-number-display-limit 2000000)
 (setq line-number-display-limit-width most-positive-fixnum)
 
 ;; Show column numbers.
@@ -162,7 +162,7 @@
 ;(set-specifier scrollbar-on-left-p nil)
 
 ;; A little bit larger font looks nicer.
-(set-face-attribute 'default nil :height 90 :weight 'bold)
+(set-face-attribute 'default nil :height 95 :weight 'normal)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
