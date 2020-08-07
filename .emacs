@@ -137,7 +137,7 @@
 
 ;; Show line numbers.
 (setq line-number-mode t)
-(setq line-number-display-limit 2000000)
+(setq line-number-display-limit nil)
 (setq line-number-display-limit-width most-positive-fixnum)
 
 ;; Show column numbers.
