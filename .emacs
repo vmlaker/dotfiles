@@ -137,6 +137,8 @@
 
 ;; Show line numbers.
 (setq line-number-mode t)
+(setq line-number-display-limit nil)
+(setq line-number-display-limit-width most-positive-fixnum)
 
 ;; Show column numbers.
 (setq column-number-mode t)
@@ -152,7 +154,7 @@
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
 ;; Set scroll bar on the left, for Emacs:
-(set-scroll-bar-mode 'left)
+;(set-scroll-bar-mode 'left)
 
 ;; Set scroll bar on the left, for XEmacs:
 ;; (replace nil with t to place it to the left)
@@ -160,7 +162,7 @@
 ;(set-specifier scrollbar-on-left-p nil)
 
 ;; A little bit larger font looks nicer.
-(set-face-attribute 'default nil :height 105)
+(set-face-attribute 'default nil :height 95 :weight 'normal)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

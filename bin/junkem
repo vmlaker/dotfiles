@@ -1,0 +1,12 @@
+#!/bin/bash
+#####################################################################
+#
+#  Create and edit a throwaway file.
+#
+#####################################################################
+#set -x  # Uncomment for debugging.
+
+mkdir -p ~/junk
+timestamp=$(date +"%Y%m%d-%H%M%S.%N")
+filename=~/junk/"junk."${timestamp}".txt"
+emacs ${filename}
