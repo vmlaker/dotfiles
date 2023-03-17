@@ -89,7 +89,18 @@ esac
 #PS1='$(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0) \[\033[01;32m\]\D{%y%m%d %H:%M:%S}\[\033[00m\] $ '
 #PS1='\[\033[01;32m\]\D{%y%m%d %H:%M:%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0)$ '
 #PS1='\[\033[01;32m\]\D{%y%m%d %H%M%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0)$ '
-PS1='\[\033[01;32m\]\D{%y%m%d %H%M%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname):$(dirs +0)\[\033[01;32m\]$\[\033[00m\] '
+#PS1='\[\033[01;32m\]\D{%y%m%d %H%M%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname):$(dirs +0)\[\033[01;32m\]$\[\033[00m\] '
+
+PS1='\
+\033[00;02m\]\
+\D{%m%d}\
+\033[01;32m\]\
+\D{%H%M%S}\
+\033[00m\]\
+$(whoami | cut -c -2)@$(hostname):$(dirs +0)\
+\033[00m\]\
+$ \
+'
 
 # username@hostname with terse temporal footprint:
 #PS1="\u@\h \D{%y%m%d-%H:%M:%S}\$ "
