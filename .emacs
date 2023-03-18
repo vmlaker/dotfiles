@@ -162,16 +162,18 @@
 ;(set-specifier scrollbar-on-left-p nil)
 
 ;; A little bit larger font looks nicer.
-(set-face-attribute 'default nil :height 95 :weight 'normal)
+(set-face-attribute 'default nil :height 102 :weight 'normal)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(c-basic-offset 2)
+ '(custom-enabled-themes '(tango-dark))
  '(inhibit-startup-screen t)
- '(vc-follow-symlinks t)
- '(c-basic-offset 2))
+ '(ispell-dictionary nil)
+ '(vc-follow-symlinks t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
