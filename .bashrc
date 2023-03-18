@@ -74,36 +74,17 @@ esac
 
 #PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32n\]\u@\h \D{%y%m%d-%H:%M:%S}\$ "
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-#PS1='\[\033[01;32m\]\u@\h\[\033[00m\] \D{%y%m%d-%H:%M:%S}\$ '
-
-# Candidate:
-#PS1='\u@\h \[\033[01;32m\]\D{%y%m%d-%H:%M:%S}\[\033[00m\]\$ '
-
-# Why don't they just use whoamai and hostnamne ?
-#PS1='$(whoami)@$(hostname) \[\033[01;32m\]\D{%y%m%d-%H:%M:%S}\[\033[00m\]\$ '
-
-# Using commands for i.d. part:
-#PS1='$(whoami | cut -c -2)@$(hostname | cut -c -3) \[\033[01;32m\]\D{%y%m%d-%H:%M:%S}\[\033[00m\]\$ '
-
-#PS1='$(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0) \[\033[01;32m\]\D{%y%m%d %H:%M:%S}\[\033[00m\] $ '
-#PS1='\[\033[01;32m\]\D{%y%m%d %H:%M:%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0)$ '
-#PS1='\[\033[01;32m\]\D{%y%m%d %H%M%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname | cut -c -3):$(dirs +0)$ '
-#PS1='\[\033[01;32m\]\D{%y%m%d %H%M%S}\[\033[00m\] $(whoami | cut -c -2)@$(hostname):$(dirs +0)\[\033[01;32m\]$\[\033[00m\] '
 
 PS1='\
-\033[00;02m\]\
+\[\033[00;02m\]\
 \D{%m%d}\
-\033[01;32m\]\
+\[\033[01;32m\]\
 \D{%H%M%S}\
-\033[00m\]\
+\[\033[00m\]\
 $(whoami | cut -c -2)@$(hostname):$(dirs +0)\
-\033[00m\]\
+\[\033[00m\]\
 $ \
 '
-
-# username@hostname with terse temporal footprint:
-#PS1="\u@\h \D{%y%m%d-%H:%M:%S}\$ "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
