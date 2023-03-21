@@ -170,7 +170,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 2)
- '(custom-enabled-themes '(tango-dark))
+ '(custom-enabled-themes (quote (tango-dark)))
  '(inhibit-startup-screen t)
  '(ispell-dictionary nil)
  '(vc-follow-symlinks t))
@@ -180,4 +180,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "gray9" :foreground "#eeeeec" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 105 :width normal :foundry "PfEd" :family "DejaVu Sans Mono")))))
