@@ -76,15 +76,23 @@ esac
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 PS1='\
-\[\033[00;02m\]\
+\[\033[0;2;32m\]\
 \D{%m%d}\
-\[\033[01;32m\]\
-\D{%H%M%S}\
-\[\033[00m\]\
-$(whoami | cut -c -2)@$(hostname):$(dirs +0)\
-\[\033[00m\]\
-$ \
-'
+\[\033[0;1;32m\]\
+\D{%H%M}\
+\[\033[0;2;32m\]\
+\D{%S}\
+\[\033[0;2;32m\]\
+$(whoami | cut -c -2)@\
+\[\033[0;1;32m\]\
+$(hostname)\
+\[\033[0;2;32m\]\
+:\
+\[\033[0m\]\
+$(dirs +0)\
+\[\033[0m\]\
+ $\
+ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
