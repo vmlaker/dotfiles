@@ -77,7 +77,7 @@ esac
 
 COLOR=33
 
-PS1="\
+PS1='\
 \[\033[0;2;${COLOR}m\]\
 \D{%m%d}\
 \[\033[0;1;${COLOR}m\]\
@@ -94,7 +94,7 @@ $(hostname)\
 $(dirs +0)\
 \[\033[0m\]\
  $\
- "
+ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
