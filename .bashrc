@@ -75,26 +75,27 @@ esac
 #PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32n\]\u@\h \D{%y%m%d-%H:%M:%S}\$ "
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-COLOR=33
+COLOR1=33
+COLOR2=37
 ENDCHAR='$'
 
 if [ "$EUID" -eq 0 ]; then
-    COLOR=31
+    COLOR1=31
+    COLOR2=33
     ENDCHAR='#'
 fi
 
 PS1='\
-\[\033[0;2;${COLOR}m\]\
+\[\033[0;2;${COLOR2}m\]\
 \D{%m%d}\
-\[\033[0;1;${COLOR}m\]\
+\[\033[0;1;${COLOR1}m\]\
 \D{%H%M}\
-\[\033[0;2;${COLOR}m\]\
+\[\033[0;2;${COLOR2}m\]\
 \D{%S}\
-\[\033[0;2;${COLOR}m\]\
 $(whoami | cut -c -2)@\
-\[\033[0;1;${COLOR}m\]\
+\[\033[0;1;${COLOR1}m\]\
 $(hostname)\
-\[\033[0;2;${COLOR}m\]\
+\[\033[0;2;${COLOR2}m\]\
 :\
 \[\033[0m\]\
 $(dirs +0)\
