@@ -1,6 +1,8 @@
 [user]
 	name = vmlaker
 	email = velimir.mlaker@gmail.com
+[IncludeIf "gitdir:~/work/ccc/"]
+        path = ~/work/ccc/.gitconfig
 [core]
 	editor = emacs
 [merge]
