@@ -75,27 +75,35 @@ esac
 #PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32n\]\u@\h \D{%y%m%d-%H:%M:%S}\$ "
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-COLOR1=33
-COLOR2=37
+
+COLOR1='1;32'   # green
+COLOR2='2;37'   # grey
 ENDCHAR='$'
 
+case $(hostname) in
+    argus|bruno)
+        COLOR1='1;33'   # yellow
+        COLOR2='2;37'   # pink
+        ;;
+esac
+
 if [ "$EUID" -eq 0 ]; then
-    COLOR1=31
-    COLOR2=33
+    COLOR1='1;31'   # pink
+    COLOR2='2;33'   # rust
     ENDCHAR='#'
 fi
 
 PS1='\
-\[\033[0;2;${COLOR2}m\]\
+\[\033[0;${COLOR2}m\]\
 \D{%m%d}\
-\[\033[0;1;${COLOR1}m\]\
+\[\033[0;${COLOR1}m\]\
 \D{%H%M}\
-\[\033[0;2;${COLOR2}m\]\
+\[\033[0;${COLOR2}m\]\
 \D{%S}\
 $(whoami | cut -c -2)@\
-\[\033[0;1;${COLOR1}m\]\
+\[\033[0;${COLOR1}m\]\
 $(hostname)\
-\[\033[0;2;${COLOR2}m\]\
+\[\033[0;${COLOR2}m\]\
 :\
 \[\033[0m\]\
 $(dirs +0)\
