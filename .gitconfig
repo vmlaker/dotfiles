@@ -18,3 +18,4 @@
 	co = checkout
 	st = status
         uc = reset --soft HEAD^
+        us = restore --staged
