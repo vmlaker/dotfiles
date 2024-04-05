@@ -134,6 +134,7 @@
 ;; Remove toolbar.
 (if window-system
     (tool-bar-mode 0))
+(menu-bar-mode -1)
 
 ;; Show line numbers.
 (setq line-number-mode t)
