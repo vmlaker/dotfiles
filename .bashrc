@@ -75,7 +75,7 @@ COLOR2='2;37'   # grey
 ENDCHAR='$'
 
 case $(hostname) in
-    turkey|argus|bruno)
+    turkey|argus|bruno|cobra|rocky)
         COLOR1='1;33'   # yellow
         COLOR2='2;37'   # pink
         ;;
